@@ -51,25 +51,25 @@ class ApiManager {
         task.resume()
     }
    
-    func getMovieTrailer(movieID: Int, complition: @escaping (movieTrailerModel) -> Void) {
-        let request = ApiType.getMovieTrailer(movieID: movieID).request
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data,
-               let movieTrailer = try? JSONDecoder().decode(movieTrailerModel.self, from: data) {
-                complition(movieTrailer)
-            }
-        }
-        task.resume()
-    }
-  
-    func getTVtrailer(TVid: Int, complition: @escaping (movieTrailerModel) -> Void) {
-        let request = ApiType.getTVtrailer(TVid: TVid).request
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data,
-               let TVTrailer = try? JSONDecoder().decode(movieTrailerModel.self, from: data) {
-                complition(TVTrailer)
-            }
-        }
-        task.resume()
-    }
+//    func getMovieTrailer(movieID: Int, complition: @escaping (movieTrailerModel) -> Void) {
+//        let request = ApiType.getMovieTrailer(movieID: movieID).request
+//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//            if let data = data,
+//               let movieTrailer = try? JSONDecoder().decode(movieTrailerModel.self, from: data) {
+//                complition(movieTrailer)
+//            }
+//        }
+//        task.resume()
+//    }
+//
+//    func getTVtrailer(TVid: Int, complition: @escaping (movieTrailerModel) -> Void) {
+//        let request = ApiType.getTVtrailer(TVid: TVid).request
+//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//            if let data = data,
+//               let TVTrailer = try? JSONDecoder().decode(movieTrailerModel.self, from: data) {
+//                complition(TVTrailer)
+//            }
+//        }
+//        task.resume()
+//    }
 }
