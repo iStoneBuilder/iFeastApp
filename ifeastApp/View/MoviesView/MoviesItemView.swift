@@ -23,13 +23,14 @@ struct MoviesItemView: View {
                     .scaledToFill()
                 } placeholder: { // 自定义 placeholder
                   Color.gray.opacity(0.2)
-                    .overlay(ProgressView())
+                    .overlay(ProgressView()) // ProgressView 加载图标
                 }
                 .frame(
                     width: width,
                     height: width * 3 / 2
                 )
             Text("蜘蛛侠：英雄无归").font(Font.caption2)
+            Text("2022").font(Font.caption2)
         }
         .padding(.vertical,4)
     }

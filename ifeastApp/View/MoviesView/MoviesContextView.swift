@@ -9,7 +9,10 @@ import SwiftUI
 
 struct MoviesContextView: View {
     var body: some View {
-        MoviesListView()
+        // 链接跳转
+        NavigationView {
+            MoviesListView()
+        }
     }
 }
 

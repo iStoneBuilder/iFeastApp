@@ -21,7 +21,14 @@ struct MoviesListView: View {
             ScrollView(.vertical) {
                 LazyVGrid(columns: columns[styleSelection]) {
                     ForEach(0..<20) { i in
-                        MoviesItemView()
+                        NavigationLink {
+                            // 影视详情页面
+                            MoviesDetailView()
+                        } label: {
+                            // 影视item
+                            MoviesItemView()
+                        }
+                        .tag("")
                     }
                 }
             }
