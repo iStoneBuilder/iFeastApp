@@ -8,43 +8,43 @@
 import Foundation
 
 
-class ApiManager {
-    static let shared = ApiManager()
+class TmdbService {
+    static let shared = TmdbService()
     
-    func getTrandingMovies(complition: @escaping (TrandingMovies) -> Void) {
-        let request = ApiType.getTrandingMovies.request
+    func getTrandingMovies(complition: @escaping (MediaResult) -> Void) {
+        let request = MediaApi.getTrandingMovies.request
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data, let movies = try? JSONDecoder().decode(TrandingMovies.self, from: data) {
+            if let data = data, let movies = try? JSONDecoder().decode(MediaResult.self, from: data) {
                 complition(movies)
             }
         }
         task.resume()
     }
     
-    func getTrandingShows(complition: @escaping (TrandingMovies) -> Void) {
-        let request = ApiType.getTrandingShows.request
+    func getTrandingShows(complition: @escaping (MediaResult) -> Void) {
+        let request = MediaApi.getTrandingShows.request
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data, let shows = try? JSONDecoder().decode(TrandingMovies.self, from: data) {
+            if let data = data, let shows = try? JSONDecoder().decode(MediaResult.self, from: data) {
                 complition(shows)
             }
         }
         task.resume()
     }
    
-    func searchMovie(search: String, complition: @escaping (TrandingMovies) -> Void) {
-        let request = ApiType.searchMovie(search: search).request
+    func searchMovie(search: String, complition: @escaping (MediaResult) -> Void) {
+        let request = MediaApi.searchMovie(search: search).request
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data, let searchMovieResult = try? JSONDecoder().decode(TrandingMovies.self, from: data) {
+            if let data = data, let searchMovieResult = try? JSONDecoder().decode(MediaResult.self, from: data) {
                 complition(searchMovieResult)
             }
         }
         task.resume()
     }
    
-    func searchShow(search: String, complition: @escaping (TrandingMovies) -> Void) {
-        let request = ApiType.searchTV(search: search).request
+    func searchShow(search: String, complition: @escaping (MediaResult) -> Void) {
+        let request = MediaApi.searchTV(search: search).request
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data, let searchShowResult = try? JSONDecoder().decode(TrandingMovies.self, from: data) {
+            if let data = data, let searchShowResult = try? JSONDecoder().decode(MediaResult.self, from: data) {
                 complition(searchShowResult)
             }
         }

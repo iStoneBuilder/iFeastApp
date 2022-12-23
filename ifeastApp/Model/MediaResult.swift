@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct TrandingMovies: Codable {
-    let page: Int?
-    let results: [Media]?
-    let totalPages, totalResults: Int?
+struct MediaResult: Codable {
+    let page: Int? // 页数
+    let results: [Media]? // 结果集
+    let totalPages, totalResults: Int? // 总页数，总结果数
     
     enum CodingKeys: String, CodingKey {
         case page, results

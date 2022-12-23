@@ -10,7 +10,7 @@ import Foundation
 /**
  语言
  */
-enum OriginalLanguage: String, Codable {
+enum Language: String, Codable {
     case aa = "aa"
     case ab = "ab"
     case ae = "ae"

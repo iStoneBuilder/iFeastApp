@@ -13,7 +13,7 @@ struct Media: Codable {
     let id: Int?
     let title: String?
     let name: String?
-    let originalLanguage: OriginalLanguage?
+    let originalLanguage: Language?
     let originalTitle, overview, originalName, posterPath: String?
     let mediaType: MediaType?
     let genreIDS: [Int]?
