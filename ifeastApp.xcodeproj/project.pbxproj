@@ -32,24 +32,9 @@
 		D9F83AC32955C01100341AE9 /* StickyAsyncImageSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F83AC22955C01100341AE9 /* StickyAsyncImageSwiftUI.swift */; };
 		D9F83AC52955C03D00341AE9 /* Double + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F83AC42955C03D00341AE9 /* Double + Ext.swift */; };
 		D9F83AC72955C09200341AE9 /* MediaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F83AC62955C09200341AE9 /* MediaApi.swift */; };
+		D9F83AC92955C16800341AE9 /* WebdavService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F83AC82955C16800341AE9 /* WebdavService.swift */; };
+		D9F83ACC2956BA2700341AE9 /* SystemPackage in Frameworks */ = {isa = PBXBuildFile; productRef = D9F83ACB2956BA2700341AE9 /* SystemPackage */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D975E291294ED202003BB2A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D975E272294ED201003BB2A6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D975E279294ED201003BB2A6;
-			remoteInfo = ifeastApp;
-		};
-		D975E29B294ED202003BB2A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D975E272294ED201003BB2A6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D975E279294ED201003BB2A6;
-			remoteInfo = ifeastApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D934655729541FD80042A101 /* BookContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContextView.swift; sourceTree = "<group>"; };
@@ -70,8 +55,6 @@
 		D975E286294ED202003BB2A6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D975E289294ED202003BB2A6 /* ifeastApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ifeastApp.xcdatamodel; sourceTree = "<group>"; };
 		D975E28B294ED202003BB2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D975E290294ED202003BB2A6 /* ifeastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ifeastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D975E29A294ED202003BB2A6 /* ifeastAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ifeastAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D975E2B2294F4153003BB2A6 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		D975E2B4294F41A8003BB2A6 /* TmdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbService.swift; sourceTree = "<group>"; };
 		D975E2B6294F4228003BB2A6 /* MediaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaResult.swift; sourceTree = "<group>"; };
@@ -81,6 +64,7 @@
 		D9F83AC22955C01100341AE9 /* StickyAsyncImageSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyAsyncImageSwiftUI.swift; sourceTree = "<group>"; };
 		D9F83AC42955C03D00341AE9 /* Double + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double + Ext.swift"; sourceTree = "<group>"; };
 		D9F83AC62955C09200341AE9 /* MediaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaApi.swift; sourceTree = "<group>"; };
+		D9F83AC82955C16800341AE9 /* WebdavService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebdavService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,20 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D975E28D294ED202003BB2A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D975E297294ED202003BB2A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D9F83ACC2956BA2700341AE9 /* SystemPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				D975E27A294ED201003BB2A6 /* ifeastApp.app */,
-				D975E290294ED202003BB2A6 /* ifeastAppTests.xctest */,
-				D975E29A294ED202003BB2A6 /* ifeastAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				D975E2B4294F41A8003BB2A6 /* TmdbService.swift */,
+				D9F83AC82955C16800341AE9 /* WebdavService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -264,45 +234,12 @@
 			dependencies = (
 			);
 			name = ifeastApp;
+			packageProductDependencies = (
+				D9F83ACB2956BA2700341AE9 /* SystemPackage */,
+			);
 			productName = ifeastApp;
 			productReference = D975E27A294ED201003BB2A6 /* ifeastApp.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D975E28F294ED202003BB2A6 /* ifeastAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D975E2A7294ED202003BB2A6 /* Build configuration list for PBXNativeTarget "ifeastAppTests" */;
-			buildPhases = (
-				D975E28C294ED202003BB2A6 /* Sources */,
-				D975E28D294ED202003BB2A6 /* Frameworks */,
-				D975E28E294ED202003BB2A6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D975E292294ED202003BB2A6 /* PBXTargetDependency */,
-			);
-			name = ifeastAppTests;
-			productName = ifeastAppTests;
-			productReference = D975E290294ED202003BB2A6 /* ifeastAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D975E299294ED202003BB2A6 /* ifeastAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D975E2AA294ED202003BB2A6 /* Build configuration list for PBXNativeTarget "ifeastAppUITests" */;
-			buildPhases = (
-				D975E296294ED202003BB2A6 /* Sources */,
-				D975E297294ED202003BB2A6 /* Frameworks */,
-				D975E298294ED202003BB2A6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D975E29C294ED202003BB2A6 /* PBXTargetDependency */,
-			);
-			name = ifeastAppUITests;
-			productName = ifeastAppUITests;
-			productReference = D975E29A294ED202003BB2A6 /* ifeastAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -317,14 +254,6 @@
 					D975E279294ED201003BB2A6 = {
 						CreatedOnToolsVersion = 14.1;
 					};
-					D975E28F294ED202003BB2A6 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = D975E279294ED201003BB2A6;
-					};
-					D975E299294ED202003BB2A6 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = D975E279294ED201003BB2A6;
-					};
 				};
 			};
 			buildConfigurationList = D975E275294ED201003BB2A6 /* Build configuration list for PBXProject "ifeastApp" */;
@@ -336,13 +265,14 @@
 				Base,
 			);
 			mainGroup = D975E271294ED201003BB2A6;
+			packageReferences = (
+				D9F83ACA2956BA2700341AE9 /* XCRemoteSwiftPackageReference "swift-system" */,
+			);
 			productRefGroup = D975E27B294ED201003BB2A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D975E279294ED201003BB2A6 /* ifeastApp */,
-				D975E28F294ED202003BB2A6 /* ifeastAppTests */,
-				D975E299294ED202003BB2A6 /* ifeastAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,20 +284,6 @@
 			files = (
 				D975E285294ED202003BB2A6 /* Preview Assets.xcassets in Resources */,
 				D975E282294ED202003BB2A6 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D975E28E294ED202003BB2A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D975E298294ED202003BB2A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +310,7 @@
 				D9F83AC72955C09200341AE9 /* MediaApi.swift in Sources */,
 				D934656629542B600042A101 /* MoviesDetailView.swift in Sources */,
 				D975E27E294ED201003BB2A6 /* ifeastAppApp.swift in Sources */,
+				D9F83AC92955C16800341AE9 /* WebdavService.swift in Sources */,
 				D975E2BD294F431C003BB2A6 /* Language.swift in Sources */,
 				D975E2B5294F41A8003BB2A6 /* TmdbService.swift in Sources */,
 				D934656229542B1C0042A101 /* MoviesItemView.swift in Sources */,
@@ -404,34 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D975E28C294ED202003BB2A6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D975E296294ED202003BB2A6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D975E292294ED202003BB2A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D975E279294ED201003BB2A6 /* ifeastApp */;
-			targetProxy = D975E291294ED202003BB2A6 /* PBXContainerItemProxy */;
-		};
-		D975E29C294ED202003BB2A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D975E279294ED201003BB2A6 /* ifeastApp */;
-			targetProxy = D975E29B294ED202003BB2A6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D975E2A2294ED202003BB2A6 /* Debug */ = {
@@ -484,13 +374,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 			};
 			name = Debug;
 		};
@@ -538,12 +430,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -612,82 +506,6 @@
 			};
 			name = Release;
 		};
-		D975E2A8294ED202003BB2A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D83GV443WA;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stone.it.ifeastAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ifeastApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ifeastApp";
-			};
-			name = Debug;
-		};
-		D975E2A9294ED202003BB2A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D83GV443WA;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stone.it.ifeastAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ifeastApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ifeastApp";
-			};
-			name = Release;
-		};
-		D975E2AB294ED202003BB2A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D83GV443WA;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stone.it.ifeastAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ifeastApp;
-			};
-			name = Debug;
-		};
-		D975E2AC294ED202003BB2A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D83GV443WA;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stone.it.ifeastAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ifeastApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -709,25 +527,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D975E2A7294ED202003BB2A6 /* Build configuration list for PBXNativeTarget "ifeastAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D975E2A8294ED202003BB2A6 /* Debug */,
-				D975E2A9294ED202003BB2A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D975E2AA294ED202003BB2A6 /* Build configuration list for PBXNativeTarget "ifeastAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D975E2AB294ED202003BB2A6 /* Debug */,
-				D975E2AC294ED202003BB2A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9F83ACA2956BA2700341AE9 /* XCRemoteSwiftPackageReference "swift-system" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-system.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9F83ACB2956BA2700341AE9 /* SystemPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9F83ACA2956BA2700341AE9 /* XCRemoteSwiftPackageReference "swift-system" */;
+			productName = SystemPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D975E288294ED202003BB2A6 /* ifeastApp.xcdatamodeld */ = {
