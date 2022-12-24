@@ -9,9 +9,9 @@ import SwiftUI
 
 struct MoviesItemView: View {
     
-    private let baseUri = "https://image.tmdb.org/t/p/original/"
+    private let baseUri = "https://image.tmdb.org/t/p/original"
     
-    private let image = "zdXdYiIgDbhP5oNYLh0VI6qbgpj.jpg"
+    private let image = "/zdXdYiIgDbhP5oNYLh0VI6qbgpj.jpg"
     
     @State private var width = (UIScreen.main.bounds.size.width - 40) / 3
     
@@ -30,7 +30,6 @@ struct MoviesItemView: View {
                     height: width * 3 / 2
                 )
             Text("蜘蛛侠：英雄无归").font(Font.caption2)
-            Text("2022").font(Font.caption2)
         }
         .padding(.vertical,4)
     }

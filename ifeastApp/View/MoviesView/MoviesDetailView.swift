@@ -37,6 +37,16 @@ struct MoviesDetailView: View {
                     .backgroundStyle(.orange.gradient)
                 }.padding(0)
             }
+            
+            Text("aaaaaa")
+            Text("aaaaaa")
+            Text("aaaaaa")
+            Text("aaaaaa")
+            Text("aaaaaa")
+            Text("aaaaaa")
+            Text("aaaaaa")
+            Text("aaaaaa")
+            Text("aaaaaa")
         }
     }
     

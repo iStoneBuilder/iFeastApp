@@ -18,10 +18,15 @@ enum MediaApi {
     case getTVtrailer(TVid: Int) // 获取电视剧花絮
     case getMovieDeatil(movieID: Int) // 获取电影详细信息
     case getTvDeatil(TVid: Int) // 获取电视剧详细信息
+    case orgUri // 原始地址
     
     // tmdb 域名
     var baseURL: String {
         return "https://api.themoviedb.org/3/"
+    }
+    
+    var origURL: String {
+        return "https://image.tmdb.org/t/p/original/"
     }
     
     var apiKey: String {
@@ -47,6 +52,8 @@ enum MediaApi {
             
         case .getMovieDeatil(movieID: let movieID): return "movie/\(String(describing: movieID))?api_key=\(apiKey)&language=\(lang)"
         case .getTvDeatil(TVid: let TVid): return "tv/\(TVid)?api_key=\(apiKey)&language=\(lang)"
+            
+        case .orgUri: return "https://image.tmdb.org/t/p/original/"
             
         }
     }
