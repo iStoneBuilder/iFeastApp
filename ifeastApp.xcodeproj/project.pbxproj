@@ -35,6 +35,7 @@
 		D9F83AC92955C16800341AE9 /* WebdavService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F83AC82955C16800341AE9 /* WebdavService.swift */; };
 		D9F83ACC2956BA2700341AE9 /* SystemPackage in Frameworks */ = {isa = PBXBuildFile; productRef = D9F83ACB2956BA2700341AE9 /* SystemPackage */; };
 		D9F83AD12956C5E300341AE9 /* WebDAV in Frameworks */ = {isa = PBXBuildFile; productRef = D9F83AD02956C5E300341AE9 /* WebDAV */; };
+		D9F83ADD29581DBE00341AE9 /* IfeastSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F83ADC29581DBE00341AE9 /* IfeastSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		D9F83AC42955C03D00341AE9 /* Double + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double + Ext.swift"; sourceTree = "<group>"; };
 		D9F83AC62955C09200341AE9 /* MediaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaApi.swift; sourceTree = "<group>"; };
 		D9F83AC82955C16800341AE9 /* WebdavService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebdavService.swift; sourceTree = "<group>"; };
+		D9F83ADC29581DBE00341AE9 /* IfeastSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfeastSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				D975E2BA294F42C2003BB2A6 /* MediaType.swift */,
 				D975E2BC294F431C003BB2A6 /* Language.swift */,
 				D9F83AC62955C09200341AE9 /* MediaApi.swift */,
+				D9F83ADC29581DBE00341AE9 /* IfeastSetting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				D934656629542B600042A101 /* MoviesDetailView.swift in Sources */,
 				D975E27E294ED201003BB2A6 /* ifeastAppApp.swift in Sources */,
 				D9F83AC92955C16800341AE9 /* WebdavService.swift in Sources */,
+				D9F83ADD29581DBE00341AE9 /* IfeastSetting.swift in Sources */,
 				D975E2BD294F431C003BB2A6 /* Language.swift in Sources */,
 				D975E2B5294F41A8003BB2A6 /* TmdbService.swift in Sources */,
 				D934656229542B1C0042A101 /* MoviesItemView.swift in Sources */,

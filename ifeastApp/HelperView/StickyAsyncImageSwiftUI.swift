@@ -12,7 +12,7 @@ public struct StickyAsyncImageSwiftUI: View {
     
     private let url: URL?
     private let size: CGFloat
-    private let widthConstant: CGFloat = 120.0.responsiveW
+    private let widthConstant: CGFloat = UIScreen.main.bounds.size.width //100.0.responsiveW
     private let coordinateSpace: AnyHashable
     private let isGradientOn: Bool
     private let linearGradient: LinearGradient
@@ -50,7 +50,7 @@ struct StickyAsyncImageSwiftUI_Previews : PreviewProvider {
         
         if #available(iOS 15.0, *) {
             ScrollView {
-                StickyAsyncImageSwiftUI(url: URL(string: "https://image.tmdb.org/t/p/original/gBK0Cs1i6yHapPTYB8VEFqxxiDq.jpg"), coordinateSpace: "Sticky", isGradientOn: true)
+                StickyAsyncImageSwiftUI(url: URL(string: "https://image.tmdb.org/t/p/original/enhA3cYLlD2dU4wefLzyFE3cn0e.jpg"), coordinateSpace: "Sticky", isGradientOn: true)
                 ForEach(0..<10) { number in
                     Group {
                         VStack {

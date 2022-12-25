@@ -16,7 +16,7 @@ struct MoviesListView: View {
     
     private let baseUri = "https://image.tmdb.org/t/p/original"
     
-    private let image = "/caQ7PUeZ2SclGRVT24iyiZOLlv6.jpg"
+    private let image = "/enhA3cYLlD2dU4wefLzyFE3cn0e.jpg"
         
     private let columns = [
       Array(repeating: GridItem(.fixed((UIScreen.main.bounds.size.width - 30) / 3)), count: 3)
@@ -41,7 +41,7 @@ struct MoviesListView: View {
             .buttonStyle(.shadow)
             .frame(width: UIScreen.main.bounds.size.width,height: 60)
             .foregroundStyle(LinearGradient(colors: [.gray, .black], startPoint: .top, endPoint: .bottom))
-            .padding(.top,-35)
+            .padding(.top,-85)
             .zIndex(2.0)
             
             LazyVGrid(columns: columns[styleSelection]) {

@@ -13,7 +13,7 @@ struct MoviesItemView: View {
     
     private let image = "/zdXdYiIgDbhP5oNYLh0VI6qbgpj.jpg"
     
-    @State private var width = (UIScreen.main.bounds.size.width - 40) / 3
+    @State private var width = (UIScreen.main.bounds.size.width - 60) / 3
     
     var body: some View {
         VStack(alignment: .leading){
@@ -29,6 +29,9 @@ struct MoviesItemView: View {
                     width: width,
                     height: width * 3 / 2
                 )
+                .foregroundColor(Color.white)
+                .cornerRadius(10)
+                .shadow(radius: 10)
             Text("蜘蛛侠：英雄无归").font(Font.caption2)
         }
         .padding(.vertical,4)

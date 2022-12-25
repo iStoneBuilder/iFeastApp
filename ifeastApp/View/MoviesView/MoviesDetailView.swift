@@ -17,7 +17,7 @@ struct MoviesDetailView: View {
         ScrollView {
             VStack(alignment: .leading){
                 VStack(alignment: .center) {
-                    StickyAsyncImageSwiftUI(url: URL(string: baseUri + image), coordinateSpace: "Sticky", isGradientOn: true)
+                    StickyAsyncImageSwiftUI(url: URL(string: baseUri + image),size: 200, coordinateSpace: "Sticky", isGradientOn: true)
                     VStack {
                         Text("阿凡达").font(Font.title)
                         HStack {
